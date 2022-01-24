@@ -1,0 +1,41 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}E:\Advanced Biostatistics\Assigment prostrate.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}24 Dec 2018, 10:15:15
+
+{com}. do "C:\Users\WINDOW~1\AppData\Local\Temp\STD27c_000000.tmp"
+{txt}
+{com}. glm xray,family(binomial) link(logit)
+{res}
+{txt}Iteration 0:{space 3}log likelihood = {res:-31.660021}  
+Iteration 1:{space 3}log likelihood = {res:-31.576521}  
+Iteration 2:{space 3}log likelihood = {res:-31.576444}  
+Iteration 3:{space 3}log likelihood = {res:-31.576444}  
+{res}
+{txt}Generalized linear models{col 51}No. of obs{col 67}={col 69}{res}        53
+{txt}Optimization     : {res}ML{txt}{col 51}Residual df{col 67}={col 69}{res}        52
+{col 20}{txt}{col 51}Scale parameter{col 67}={col 70}{res}        1
+{txt}Deviance{col 18}={res}{col 20} 63.15288866{txt}{col 51}(1/df) Deviance{col 67}={res}{col 70} 1.214479
+{txt}Pearson{col 18}={res}{col 20}          53{txt}{col 51}(1/df) Pearson{col 67}={res}{col 70} 1.019231
+
+{txt}Variance function: {res}V(u) = {col 27}u*(1-u){col 51}{txt}[{res}Bernoulli{txt}]
+Link function    : {res}g(u) = {col 27}ln(u/(1-u)){col 51}{txt}[{res}Logit{txt}]
+
+{col 51}{help j_glmic##|_new:AIC}{col 67}={res}{col 70}   1.2293
+{txt}Log likelihood{col 18}= {res}-31.57644433{txt}{col 51}{help j_glmic##|_new:BIC}{col 67}={res}{col 70}-143.3023
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 26}      OIM
+{col 1}        xray{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      z{col 46}   P>|z|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}_cons {c |}{col 14}{res}{space 2} -.929536{col 26}{space 2} .3049302{col 37}{space 1}   -3.05{col 46}{space 3}0.002{col 54}{space 4}-1.527188{col 67}{space 3}-.3318837
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}. 
+{txt}end of do-file
+
+{com}. use "E:\Advanced Biostatistics\prostate9 (2).dta"
+
+. 
